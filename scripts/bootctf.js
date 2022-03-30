@@ -12,6 +12,13 @@ class BootCtf {
       return driver
   }
 
+  static async wait(millis) {
+    let promise = new Promise((resolve, reject) => {
+      setTimeout(() => resolve("Hello World!"), millis)
+    });
+    let result = await promise;
+  }
+
   static async waitForWindow(driver, vars, timeout = 2) {
     await driver.sleep(timeout)
     const handlesThen = vars["windowHandles"]
@@ -65,7 +72,7 @@ class BootCtf {
     await BootCtf.openWorkingTasks(driver, vars, dossier)
     await BootCtf.searchDossier(driver, vars, dossier)
     await BootCtf.gotoCtfDom(driver, vars)
-
+    driver.switchTo().frame(2) // frame name = MainForm    
     driver.switchTo().frame(0) // frame id = Lista
     let elemchild = await driver.findElement(By.css("td:nth-child(2)"))//.click()
     elemchild.click()
@@ -73,6 +80,19 @@ class BootCtf {
     driver.switchTo().parentFrame()
     driver.switchTo().frame(1); // frame name = BODY
     console.log("end openDetailsDossier")
+  }
+
+  static async openAppraisalFee(driver, vars, dossier) {
+    console.log("start openAppraisalFee")
+    await BootCtf.openWorkingTasks(driver, vars, dossier)
+    await BootCtf.searchDossier(driver, vars, dossier)
+    await BootCtf.gotoCtfDom(driver, vars)
+    driver.switchTo().frame(1) // frame name = MainBar    
+    await driver.findElement(By.linkText("Appraisal Fee")).click()
+    await driver.sleep(3000)
+    await BootCtf.gotoCtfDom(driver, vars)
+    driver.switchTo().frame(2) // frame name = MainForm
+    console.log("end openAppraisalFee")
   }
 
   static async openWorkingTasks(driver, vars, dossier) {
@@ -99,7 +119,7 @@ class BootCtf {
     await driver.switchTo().frame(1)
     await driver.switchTo().frame(1)
     await driver.findElement(By.xpath("//img[@title=\'Search Dossier\']")).click()
-    await driver.sleep(5000)
+    await driver.sleep(8000)
     await driver.switchTo().parentFrame()
     await driver.switchTo().frame(2)
     await driver.findElement(By.id("txtPratNumEsatto")).click()
@@ -125,9 +145,7 @@ class BootCtf {
     driver.switchTo().frame(frBody);
     let elem = await driver.findElements(By.tagName("iframe"))
     let elem2 = await driver.findElements(By.tagName("frame"))
-    driver.switchTo().frame(1); // frame id = frMain
-    driver.switchTo().frame(2) // frame name = MainForm (ctf frame)
-    console.log("inner ctf dom")
+    driver.switchTo().frame(1); // frame id = frMain (ctf frame)
     await driver.sleep(2000)
     console.log("end gotoCtfDom")
   }

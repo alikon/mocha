@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run single",
-    "single": "./node_modules/.bin/mocha scripts/test3.spec.js"
+    "debitca": "npm run debitca-test",
+    "single": "./node_modules/.bin/mocha scripts/test3.spec.js",
+    "debitca-test": "./node_modules/.bin/mocha scripts/debitCa.spec.js"
   },
   "author": "aa",
   "license": "ISC",
