@@ -1,0 +1,318 @@
+{
+  "id": "1c32b27a-9932-43c0-8e73-40bd65b90658",
+  "version": "2.0",
+  "name": "CTF-test",
+  "url": "https://172.21.160.241/eflow/LoginServlet",
+  "tests": [{
+    "id": "1c594557-95f4-4c3c-94f2-b931c955dd2d",
+    "name": "DebitCa",
+    "commands": [{
+      "id": "181d6a90-a7d1-47c3-83f4-5356b54ef63b",
+      "comment": "",
+      "command": "open",
+      "target": "https://172.21.160.241/eflow/LoginServlet",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "541471dc-d222-4e42-bde7-69510f01789a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1699x932",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c0a50ccd-6c88-4089-8259-a3d66f6c907b",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtUID",
+      "targets": [
+        ["id=txtUID", "id"],
+        ["name=txtUID", "name"],
+        ["css=#txtUID", "css:finder"],
+        ["xpath=//input[@id='txtUID']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr/td[2]/nobr/input", "xpath:idRelative"],
+        ["xpath=//nobr/input", "xpath:position"]
+      ],
+      "value": "20403680"
+    }, {
+      "id": "3c8c7318-dded-43d7-acf0-d2fb3ca1971e",
+      "comment": "",
+      "command": "click",
+      "target": "id=cmdConferma",
+      "targets": [
+        ["id=cmdConferma", "id"],
+        ["name=cmdConferma", "name"],
+        ["css=#cmdConferma", "css:finder"],
+        ["xpath=//input[@id='cmdConferma']", "xpath:attributes"],
+        ["xpath=//form[@id='form1']/table/tbody/tr/td/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2332",
+      "windowTimeout": 2000
+    }, {
+      "id": "f85476e4-d79a-4f73-8bc2-3bf10efac197",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2332}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cbee3935-7e73-40f9-83ae-6e91494b3697",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Working Tasks",
+      "targets": [
+        ["linkText=Working Tasks", "linkText"],
+        ["css=tr:nth-child(1) > td:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Working Tasks')]", "xpath:link"],
+        ["xpath=//a[@onclick='showApplication(1, \"Working Tasks\", \"frBody\")']", "xpath:attributes"],
+        ["xpath=//td[@id='fastMenuItems']/table/tbody/tr/td[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[2]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Working Tasks')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b1c5e8e-3148-49a3-8cb2-c5915a1b58c8",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c6ebabf-0c2b-4c8a-8ba5-9178258638dd",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "331c498f-5e15-4732-8107-0ac63092077b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c11e490-ed14-4389-bd20-aa686622a06a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@title='Search Dossier']",
+      "targets": [
+        ["xpath=//img[@title='Search Dossier']", "xpath:img"],
+        ["xpath=(//td[@id='pulsante']/img)[2]", "xpath:idRelative"],
+        ["xpath=//td[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11d2ddc7-555f-49f3-a12c-dca30445a713",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4300e21-d047-4686-b43b-7b75103411a0",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "1248e581-ec08-4a32-a61d-f663dd544e91",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPratNumEsatto",
+      "targets": [
+        ["id=txtPratNumEsatto", "id"],
+        ["name=txtPratNumEsatto", "name"],
+        ["css=#txtPratNumEsatto", "css:finder"],
+        ["xpath=//input[@id='txtPratNumEsatto']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d579fd6c-ce0d-49f3-bd0c-dc8981e6b4d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=txtPratNumEsatto",
+      "targets": [
+        ["id=txtPratNumEsatto", "id"],
+        ["name=txtPratNumEsatto", "name"],
+        ["css=#txtPratNumEsatto", "css:finder"],
+        ["xpath=//input[@id='txtPratNumEsatto']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15ba5fe9-0f07-41df-bd63-ab5aa96d2fbd",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=txtPratNumEsatto",
+      "targets": [
+        ["id=txtPratNumEsatto", "id"],
+        ["name=txtPratNumEsatto", "name"],
+        ["css=#txtPratNumEsatto", "css:finder"],
+        ["xpath=//input[@id='txtPratNumEsatto']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "38eedcb9-f117-4b8a-93ca-781a2c00ee57",
+      "comment": "",
+      "command": "type",
+      "target": "id=txtPratNumEsatto",
+      "targets": [
+        ["id=txtPratNumEsatto", "id"],
+        ["name=txtPratNumEsatto", "name"],
+        ["css=#txtPratNumEsatto", "css:finder"],
+        ["xpath=//input[@id='txtPratNumEsatto']", "xpath:attributes"],
+        ["xpath=//table[2]/tbody/tr/td[2]/input", "xpath:position"]
+      ],
+      "value": "868057"
+    }, {
+      "id": "69b5225d-a674-4966-bd0c-48d729558a01",
+      "comment": "",
+      "command": "click",
+      "target": "css=#cmdAvvio > .ui-button-text",
+      "targets": [
+        ["css=#cmdAvvio > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='cmdAvvio']/span", "xpath:idRelative"],
+        ["xpath=//button[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1808db9-3066-436c-b30e-fb3ab8185057",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//td[@id='cella'])[3]",
+      "targets": [
+        ["xpath=(//td[@id='cella'])[3]", "xpath:attributes"],
+        ["xpath=//tr[@id='Riga0']/td[3]", "xpath:idRelative"],
+        ["xpath=//td[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "51de24d0-1259-4e12-8384-33bd24d9cca2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//td[@id='cella'])[3]",
+      "targets": [
+        ["xpath=(//td[@id='cella'])[3]", "xpath:attributes"],
+        ["xpath=//tr[@id='Riga0']/td[3]", "xpath:idRelative"],
+        ["xpath=//td[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82970404-a012-4844-a9db-d55320a2f318",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "xpath=(//td[@id='cella'])[3]",
+      "targets": [
+        ["xpath=(//td[@id='cella'])[3]", "xpath:attributes"],
+        ["xpath=//tr[@id='Riga0']/td[3]", "xpath:idRelative"],
+        ["xpath=//td[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7eb3f35-c4e5-4e05-bb63-187f63988c7c",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "22c19618-966b-49ae-a880-e0d231a69d74",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=1",
+      "targets": [
+        ["index=1"]
+      ],
+      "value": ""
+    }, {
+      "id": "f18de81d-fedc-413c-b6af-f99961761c37",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Appraisal Fee",
+      "targets": [
+        ["linkText=Appraisal Fee", "linkText"],
+        ["css=li:nth-child(7) > #link_56", "css:finder"],
+        ["xpath=//a[contains(text(),'Appraisal Fee')]", "xpath:link"],
+        ["xpath=(//a[@id='link_56'])[7]", "xpath:attributes"],
+        ["xpath=//form[@id='topMenu']/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/servlet/AppraisalFeeServlet.ctf?ACTION=INIT&ticketCTF=InternalCall')]", "xpath:href"],
+        ["xpath=//li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Appraisal Fee')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9af1f7b5-0f86-4dcf-a566-881a2c7e8e2b",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "relative=parent",
+      "targets": [
+        ["relative=parent"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e9d3f38-0102-4521-b013-40027ca18f8e",
+      "comment": "",
+      "command": "selectFrame",
+      "target": "index=2",
+      "targets": [
+        ["index=2"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8c79a89-42bc-4367-9292-090b42d0c6a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=startDebit",
+      "targets": [
+        ["id=startDebit", "id"],
+        ["css=#startDebit", "css:finder"],
+        ["xpath=//button[@id='startDebit']", "xpath:attributes"],
+        ["xpath=//form[@id='appraisalFeeForm']/table/tbody[2]/tr[5]/td[2]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'START DEBIT C/A')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win6738",
+      "windowTimeout": 2000
+    }, {
+      "id": "4a1850e7-6785-4061-a177-54380f9c7b1a",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win6738}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d161ecf6-477e-43ab-b7ba-3dc747e1cf5b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://172.21.160.241/"],
+  "plugins": []
+}
